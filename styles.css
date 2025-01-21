@@ -1,0 +1,21 @@
+a {
+    color: #FFF;
+}
+
+body {
+    background-color: #e4dcc8;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e7cb85;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #22283b;
+    padding: 1rem;
+}
