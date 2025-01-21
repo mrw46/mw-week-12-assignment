@@ -3,12 +3,14 @@ a {
 }
 
 body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e4dcc8;
 }
 
-h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1 {    
+    font-size: 3rem;
     color: #e7cb85;
+    text-align: center;
 }
 
 header {
@@ -17,5 +19,28 @@ header {
     left: 0;
     width: 100%;
     background-color: #22283b;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+main {
+    overflow: scroll;
+}
+
+.navLinks {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navLinks a {    
+    font-size: x-large;
+    margin: 1rem;
+}
+
+section {
+    width: full;
+    border: solid 1px black;
 }
