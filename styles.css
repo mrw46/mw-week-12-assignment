@@ -1,17 +1,14 @@
-a {
-    color: #FFF;
-}
-
 #about h2 {
     margin-bottom: 1rem;
 }
 
 .anchor-target {
-    margin-top: -11rem;
-    padding-top: 11rem;
+    margin-top: -10rem;
+    padding-top: 10rem;
 }
 
 body {
+    margin: 0;
     font-family:'Source Code Pro', serif;
     background-color: #e4dcc8;
 }
@@ -26,6 +23,18 @@ body {
     width: 100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: right;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    font-family: "Rouge Script", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e7cb85;
+    background-color: #22283b;
 }
 
 .form-image {
@@ -49,6 +58,8 @@ h1 {
 
 h2 {
     margin: 0;
+    margin-top: 1rem;
+    padding: 0 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
     color: #22283b;
@@ -71,6 +82,19 @@ header {
     background-color: #22283b;
 }
 
+header a {
+    color: #FFF;
+}
+
+header a:hover {
+    color:#e7cb85;
+}
+
+hr {
+    background-color: #22283b;
+    border-style: solid;
+}
+
 .identity-check {
     display: flex;
     gap: 1.5rem;
@@ -83,7 +107,7 @@ input, select, textarea {
 
 
 main {
-    overflow: scroll;
+    overflow: auto;
     padding-top: 10rem;
 }
 
@@ -147,6 +171,9 @@ section {
 }
 
 .submit-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
     margin-top: 3rem;    
     padding: 0.5rem;
     padding-left: 1rem;
@@ -155,11 +182,13 @@ section {
     font-family:'Source Code Pro', serif;
     font-size: xx-large;
     color: #fff;
+    border-color: #22283b;
     background-color: #22283b;
 }
 
 .submit-button:hover {
     color: #22283b;
+    border-color: #22283b;
     background-color:#e7cb85;
     font-weight: 800;
 }
