@@ -6,29 +6,37 @@ a {
     margin-bottom: 1rem;
 }
 
+.anchor-target {
+    margin-top: -11rem;
+    padding-top: 11rem;
+}
+
 body {
     font-family:'Source Code Pro', serif;
     background-color: #e4dcc8;
 }
 
-.contact-details {
+.contact-form {
     display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: left;
+    grid-template-columns: 35% 65%;
+    justify-items: right;
     align-items: center;
     gap: 1rem;
+    margin-top: 1.5rem;
     width: 100%;
-    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
 }
 
 .form-image {
     justify-self: center;
-    width: 70%;
+    width: 60%;
 }
 
 .form-question {
     grid-column-start: 1;
     grid-column-end: 3;
+    justify-self: left;
 }
 
 h1 {    
@@ -63,15 +71,31 @@ header {
     background-color: #22283b;
 }
 
-.profile-pic {
-    width: 80%;
-    max-width: 500px;
-    min-width: 200px;
+.identity-check {
+    display: flex;
+    gap: 1.5rem;
+    justify-self: center;
 }
+
+input, select, textarea {
+    justify-self: left;
+}
+
 
 main {
     overflow: scroll;
-    margin-top: 10rem;
+    padding-top: 10rem;
+}
+
+.my-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.my-details p {
+    justify-self: right;
 }
 
 nav {    
@@ -90,6 +114,12 @@ p {
     margin: 0;
 }
 
+.profile-pic {
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
 .project-image {
     width: 100%;
 }
@@ -100,8 +130,7 @@ section {
     align-items: center;
     width: full;
     min-width: 300px;
-    padding: 1rem;
-    border: solid 1px black;
+    padding: 1rem;    
 }
 
 .section-content {
@@ -115,4 +144,50 @@ section {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: justify;
+}
+
+.submit-button {
+    margin-top: 3rem;    
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    font-family:'Source Code Pro', serif;
+    font-size: xx-large;
+    color: #fff;
+    background-color: #22283b;
+}
+
+.submit-button:hover {
+    color: #22283b;
+    background-color:#e7cb85;
+    font-weight: 800;
+}
+
+.user-details {
+    padding: 3rem;
+    border: ridge #22283b 4px;
+    border-radius: 3rem;
+}
+
+.user-details h3 {
+    justify-self: center;
+}
+
+textarea {
+    width: 75%;
+    height: 5rem;
+}
+
+.yes-no {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-self: left;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.yes-no label {
+    justify-self: center;
 }

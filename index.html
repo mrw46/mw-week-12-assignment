@@ -19,9 +19,9 @@
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section class="anchor-target" id="about">
             <h2>About</h2>
-            <img class="profil-pic" src="Michael White Cropped.jpg" alt="Profile picture">
+            <img class="profile-pic" src="Michael White Cropped.jpg" alt="Profile picture">
             <div class="section-content">
                 <h3>Bio</h3>
                 <p>
@@ -31,7 +31,7 @@
                 </p>
             </div>    
         </section>
-        <section id="projects">
+        <section class="anchor-target" id="projects">
             <h2>Projects</h2>
             <article class="section-content">
                 <h3>Innovative Solutions Hub</h3>
@@ -39,7 +39,7 @@
                 <p>
                     One of my first projects in software development was the Innovative Solutions Hub, a web app which uses a Next.js front end and a .NET back end.
                     <br/> 
-                    The app allowed users to input any problems they might have, and then queried a database of innovative solutions through an API to find the most suitable solution for the given problem. The project was so innovative that I actually made up some new words for it; for example, the word "Tetiimouials" can be seen in the screenshot above! What does it mean? Follow the link to find out.
+                    The app allowed users to input any problems they might have, and then queried a database of innovative solutions through an API to find the most suitable solution for the given problem. The project was so innovative that I actually made up some new words for it; for example, the word "Tetiimouials" can be seen in the screenshot above! What does it mean? Visit the page to find out!
                     <br/>
                     The app also boasts an impressive three Services tabs in the navbar.
                 </p>
@@ -56,56 +56,66 @@
                 </p>
             </article>
         </section>
-        <section id="contact">
+        <section class="anchor-target" id="contact">
             <h2>Contact</h2>
             <div class="section-content">
-                <p>Email address: <a href="mailto:michael.white@trusted-technology.co.uk">michael.white@trusted-technology.co.uk</a></p>
-                <p>Phone number: <a gref=""tel:+441425470888>01425 470888</a></p>
-                <h3>Your details</h3>
-                <form class="contact-details">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" class="formText" name="name">
-                    
-                    <label for="phoneNumber">Phone number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber">
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    
-                    <label for="dob">Date of birth:</label>
-                    <input type="date" id="dob" name="dob">
-                    
-                    <label for="message">Leave a message:</label>
-                    
-                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
-                    
-                    <label for="flavours">Favourite ice cream flavour:</label>
-                    <select id="flavours" name="flavours">
-                        <option>Vanilla</option>
-                        <option>Chocolate</option>
-                        <option>Strawberry</option>
-                        <option>Coconut</option>
-                        <option>Pistachio</option>
-                        <option>Rum & raisin</option>
-                        <option>Mint choc chip</option>
-                        <option>Cookie dough</option>
-                    </select>
-                    
-                    <p class="form-question">Are you happy for me to contact you?</p>                    
-                    <label for="contactYes">Yes</label>
-                    <input type="radio" id="contactYes" name="contactPermission">
-                    <label for="contactNo">No</label>
-                    <input type="radio" id="contactNo" name="contactPermission">
-                    
-                    <p class="form-question">Please confirm you are not a terminator</p>                    
-                    <div>
-                        <input type="checkbox" id="notABot">
-                        <label for="notABot">I am not a terminator</label>
-                    </div>
-                    <img src="No terminators.png" class="form-image" width="250" alt="Terminator behind prohibited symbol"/>
-                    <br/>
-                    <input type="submit" name="submit">
-                </form>
+                <div class="my-details">
+                    <p>Email address: </p>
+                    <a href="mailto:michael.white@trusted-technology.co.uk">michael.white@trusted-technology.co.uk</a>
+                    <p>Phone number:</p>
+                    <a href="tel:+441425470888">01425 470888</a>
+                    <p>Github page:</p>
+                    <a href="https://github.com/mrw46">www.github.com/mrw46</a>
+                </div>
+                <div class="user-details">
+                    <h3>Your details</h3>
+                    <form class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        
+                        <label for="phoneNumber">Phone number:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" name="dob">
+                        
+                        <label for="message">Leave a message:</label>
+                        
+                        <textarea id="message" name="message"></textarea>
+                        
+                        <label for="flavours">Favourite ice cream flavour:</label>
+                        <select id="flavours" name="flavours">
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                            <option>Strawberry</option>
+                            <option>Coconut</option>
+                            <option>Pistachio</option>
+                            <option>Rum & raisin</option>
+                            <option>Mint choc chip</option>
+                            <option>Cookie dough</option>
+                        </select>
+                        <br/><br/>
+                        <p class="form-question">Are you happy for me to contact you?</p>                    
+                        <div class="yes-no">
+                            <label for="contactYes">Yes</label>
+                            <input type="radio" id="contactYes" name="contactPermission">
+                            <label for="contactNo">No</label>
+                            <input type="radio" id="contactNo" name="contactPermission">
+                        </div>
+                        
+                        <p class="form-question">Please confirm you are not a terminator:</p>                    
+                        <div class="identity-check">
+                            <input type="checkbox" id="notABot">
+                            <label for="notABot">I am not a terminator</label>
+                        </div>
+                        <img src="No terminators.png" class="form-image" width="250" alt="Terminator behind prohibited symbol"/>
+                        <br/>
+                        <input class="submit-button" type="submit" name="submit">
+                    </form>
+                </div>
             </div>
         </section>
 
