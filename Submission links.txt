@@ -1,0 +1,5 @@
+GitHub repository:
+https://github.com/mrw46/mw-week-12-assignment
+
+Live GitHub Pages site:
+https://mrw46.github.io/mw-week-12-assignment/
