@@ -118,6 +118,18 @@ main {
     margin-bottom: 2rem;
 }
 
+.my-details a {
+    color:#213166;
+}
+
+.my-details a:visited {
+    color:#662121;
+}
+
+.my-details a:hover {
+    color:#85a7e7
+}
+
 .my-details p {
     justify-self: right;
 }
